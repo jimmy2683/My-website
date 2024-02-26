@@ -1,0 +1,118 @@
+body {
+    background-color: rgb(0, 0, 0);
+    border: 50px solid rgb(36, 36, 43);
+    box-shadow: 2px 2px 10px 5px greenyellow;
+    border-radius: 15px;
+}
+
+nav {
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav li {
+    color: aquamarine;
+    list-style: none;
+    display: inline-block;
+    margin-right: 50px;
+    cursor: pointer;
+}
+.top:hover {
+    border: 5px solid rgb(39, 124, 124);
+    background-size: 100%;
+    background-color: azure;
+    position: relative;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {}
+
+    to {
+        opacity: 100%;
+        box-shadow: 1px 1px 40px 10px rgb(247, 247, 37), inset 5px 5px 23px 20px hotpink, 1px 2px 30px 20px rgb(105, 185, 255);
+    }
+}
+
+.grid {
+    display: grid;
+    height: 10px;
+    position: relative;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+}
+
+.box {
+    background-color: rgb(223, 230, 232);
+    border: 5px solid rgb(214, 230, 230);
+    border-radius: 15px;
+    align-items: center;
+    max-width: 35%;
+    min-width: 200px;
+    height: auto;
+    overflow: auto;
+    margin: 5%;
+    font-family: cursive;
+    color: rgb(96, 97, 102);
+    position: relative;
+    z-index: 10;
+}
+
+.box h1,
+p {
+    padding: 2% 5% 0% 5%;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+    background-image: url(photos/tumblr_mp7n4iWA3g1ssqxwho1_500.gif);
+}
+
+.box img {
+    border-radius: 10px;
+    width: 97%;
+    border: 2px solid rgb(196, 204, 211);
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.box li {
+    border: 2px solid rgb(186, 191, 191);
+    border-radius: 15px;
+    margin: 2px;
+    list-style: none;
+    text-align: center;
+    padding: 5px;
+    display: inline-block;
+}
+
+a {
+    color: grey;
+    text-decoration: none;
+}
+
+.box .button {
+    text-align: center;
+}
+
+.box button {
+    color: rgb(66, 59, 206);
+    font-weight: bolder;
+    font-size: 10px;
+    border-radius: 15px;
+    background-color: rgb(192, 233, 244);
+    border: 2px solid rgb(214, 201, 201);
+    padding: 7px;
+    margin: 35px;
+}
+
+.box button:hover {
+    color: hotpink;
+    background-color: aqua;
+}

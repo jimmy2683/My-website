@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Key Press Example</title>
+</head>
+<body>
+  <input type="text" id="b" />
+  <script>
+    document.getElementById("b").addEventListener("keypress", k => {
+      if (k.key === '*') {
+        document.getElementById("b").value = document.getElementById("b").value.slice(0, -1);
+       document.getElementById("b").value += '×';
+      }
+    });
+  </script>
+</body>
+</html>

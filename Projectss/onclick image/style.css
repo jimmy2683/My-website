@@ -1,0 +1,113 @@
+body {
+    background-color: rgb(0, 0, 0);
+    color: aqua;
+    box-sizing: border-box;
+}
+
+.container {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: transparent;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+}
+
+section {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    overflow-y: hidden;
+    z-index: 1;
+}
+
+.new {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: block;
+    
+}
+
+.new::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("th.jpg");
+    mix-blend-mode: color-burn;
+    background-size: contain;
+    transform: scale(0.1);
+    box-shadow: 0 0 10px #ff00c8,
+        0 0 20px #ff00f7,
+        0 0 40px #ff00cc,
+        0 0 60px #fb00ff,
+        0 0 80px #009dff,
+        0 0 100px #00ccff;
+    border-radius: 50%;
+    transition: 1s;
+    pointer-events: none;
+    animation: glow 5s infinite forwards ;
+}
+
+
+@keyframes glow {
+    from{}
+    to{
+        filter: hue-rotate(360deg);
+    }
+}
+.new:hover::before {
+    transform: scale(0.5);
+    transition: 0s;
+}
+
+.main {
+    display: flex;
+    gap: 20px;
+    margin: auto;
+    justify-content: center;
+    opacity: 100%;
+    position: relative;
+    z-index: 5;
+    border-radius: 30px;
+}
+
+.main .img {
+    border-radius: 15px;
+    width: 15vw;
+    height: 30vh;
+    image-rendering: pixelated;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    border: 2px solid rgb(98, 123, 139);
+    box-shadow: 0px 0px 5px 2px rgb(137, 131, 131);
+    margin-top: 10px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.icon span {
+    border: 2px solid blue;
+    box-shadow: 0px 0px 5px 5px rgb(83, 82, 82);
+    border-radius: 25px;
+    padding: 5px;
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    z-index: 5;
+    transform: rotate3d('50deg', '50deg', '50deg');
+}

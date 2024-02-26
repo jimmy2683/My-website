@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Dancing Script', cursive;
+}
+body{
+    background-repeat: no-repeat;
+    background-image: url("giphy.gif");
+    background-color: black;
+    background-size: cover;
+}
+.container{
+    text-align: center;
+    color: blueviolet;
+}
+h1{
+    padding: 50px 5px 50px 5px;
+    font-weight: 900;
+    font-size: 70px;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: url("win.jpeg");
+    text-shadow:cyan 15px 25px 15px,cyan -15px -25px 25px,cyan 25px 30px ;    
+}
+.input input{
+    width:80vw;
+    margin-bottom: 20px;
+    height: 50px;
+    font-size: 24px;
+    color: goldenrod;
+    margin: auto;
+    border: 0px transparent;
+    border-radius: 5px 15px;
+    background: radial-gradient(rgb(102, 230, 232),rgb(212, 63, 140));
+}
+.input{
+    border-radius: 10px 40px;
+    color: goldenrod;
+    text-align: center;
+    border: 5px solid;
+    margin: auto;
+    margin-bottom: 30px;
+    width:90vw;
+    background: radial-gradient(rgb(102, 230, 232),rgb(212, 63, 140));
+}
+.players{
+    display: flex;
+    justify-content: space-around;
+}
+.player1,.player2{
+    width: min(40vw,700px);
+    height: 300px;
+    border:5px solid;
+    border-radius: 15px;
+}
+.player1::before{
+    content: var(--before-content1);
+    border: 5px solid;
+    font-size: 40px;
+}
+.player2::before{
+    content: var(--before-content2);
+    border:5px solid;
+    font-size: 40px;
+}
+.button button{
+    background-color: transparent;
+    font-size: 4vw;
+    border: 5px double blueviolet;
+    padding: 5px 10px;
+    margin-top: 3vh;
+    cursor: pointer;
+    color: blueviolet;
+    margin-left: 1vw;
+    margin-right: 8vw;
+}
+@keyframes roll {
+    from {
+        transform: scale(0.5) rotateX(0deg) rotateZ(0deg) rotateY(0deg);
+    }
+    to {
+        transform: scale(1.2) rotateX(90deg) rotateZ(90deg) rotateY(90deg);
+        box-shadow: inset 0px 0px 5px 5px greenyellow;
+        text-shadow: hotpink 1px 1px 2px,hotpink 1px 1px 4px;
+    }
+}
+
+.button button:hover span{
+    animation: roll 1s ease-out infinite alternate;
+    border-radius: 50%;
+}
+
+.button span{
+    font-size: 4vw;
+    translate: 0 1vw;
+}

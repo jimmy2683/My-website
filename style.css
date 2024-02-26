@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(235, 191, 238);
+    scroll-behavior: smooth;
+}
+body{
+    background: linear-gradient(#000,rgb(45, 45, 71),rgb(40, 37, 37));
+    min-height: 200vh;
+    overflow-x: hidden;
+}
+.container {
+    width: 100vw;
+    overflow: hidden;
+}
+.container .firstpa{
+    height: 100vh;
+    width: 100vw;
+}
+.container .first{
+    background:transparent;
+    z-index: 10;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.container .first1 {
+    background: url("couple_starry_sky_art_123338_1280x720.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    position: absolute;
+  }
+  .container .first2{
+    position:absolute;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.3;
+    background: url("space.png");
+    z-index: 1;
+    overflow: hidden;
+  }
+  
+  .container .first3 img{
+      position:absolute;
+      background-repeat: no-repeat;
+      opacity: 2;
+      filter: brightness(60%) hue-rotate(1550deg);
+      width: 25vw;
+      z-index: 2;
+      bottom: min(15vw,10vh);
+      right: -30vw;
+      transform: rotateY(180deg);
+      border-radius: 50%; 
+      box-shadow: 5px 5px 5px 2px rgb(39, 189, 166), 0px 0px 10px 5px rgb(3, 40, 52);
+  }
+.container .first .content{
+    position: absolute;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.container .first header{
+    width: 90vw;
+    padding:10px;
+}
+.container .first header .mainopt{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2vw;
+    margin: 10px;
+}
+@media (min-width: 600px) {
+    
+
+.container .first header .mainopt li:first-child a{
+    background: whitesmoke;
+    color: black;
+    font-weight: 700;
+    border-radius: 30px;
+}
+.container .first header .mainopt li:last-child{
+    display: none;
+}
+
+.container .first header .mainopt li a:hover{
+    background: whitesmoke;
+    color: black;
+    border-radius: 30px;
+}
+}
+@media (max-width:599px){
+    .container .first header .mainopt >li:last-child{
+        display: inline;
+        background: rgba(0, 0, 0, 0);
+        color: rgb(255, 0, 200);
+        font-weight: 800;
+        padding: 5px 8px;
+        border-radius: 30px;
+    }
+    .container .first header .mainopt >li:last-child span{
+        cursor: pointer;
+        background: rgba(0, 0, 0, 0.207);
+        color: rgb(255, 0, 200);
+        font-weight: 800;
+        padding: 5px 8px;
+        border-radius: 5px;
+        font-size: 24px;
+    }
+    .container .first header .mainopt > li:last-child .options{
+        background: rgb(201, 37, 198);
+        height: 220px;
+        padding: 0px 20px;
+        translate: -110px;
+        border-radius: 30px;
+        display: none;
+        z-index: 100;
+    }
+    .container .first header .mainopt li:last-child .options li{
+        margin-top: 10px;
+        z-index: 100;
+    }
+    .container .first header .mainopt li:last-child .options li:first-child{
+        list-style: disc;
+        color: rgb(238, 238, 238);
+
+    }
+    .container .first header .mainopt li:last-child .options li:hover{
+        list-style: disc;
+        color: rgb(238, 238, 238);
+    }
+    .container .first header .mainopt li:last-child .options li a{
+        font-size:16px;
+        color: rgb(238, 238, 238);
+        border-radius: 30px;
+        /* padding: 5px 10px; */
+        /* background: rgb(0, 0, 0); */
+    }
+    .container .first header .mainopt >li{
+        list-style: none;
+        display: none;
+    }
+
+}
+.container .first header ul li, a{
+    list-style: none;
+    padding: 5px 7.5px;
+    font-weight: 700;
+}
+.container .firstpa .first footer{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+    font-family: cursive;
+    margin-top: min(50vw,50vh);
+    z-index: 5;
+    margin-left: -176vw;
+    color: white;
+}
+
+.container .secondpa {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to top,rgb(81, 54, 81),transparent);
+    color: aqua;
+}
